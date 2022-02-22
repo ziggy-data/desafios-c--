@@ -2,6 +2,9 @@
 using namespace std;
 
 int main (){
+
+    //Verifica se o valor inserido do usuario é impar ou par
+
     int x;
 
     cout<<"Digite o X"<<endl;

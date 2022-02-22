@@ -2,6 +2,9 @@
 using namespace std;
 
 int main (){
+
+    //Comparando duas variaveis de valores interiros que o usuario inserir
+
     int x,y;
 
     cout<<"Digite o x"<<endl;
