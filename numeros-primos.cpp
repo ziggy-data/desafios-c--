@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    int contador=0,i,valor;
+    int contador=0,valor;
     
     cout<<"Digite um valor : ";
     cin>>valor;
