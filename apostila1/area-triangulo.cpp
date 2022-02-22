@@ -6,7 +6,7 @@ int main(){
     //Calcula a area do triangulo de forma simples, pode ser melhorado por cada tipo de lados
     //de triangulos (escaleno, equilatero, isoceles) 
 
-    int base,altura,resultado;
+    double base,altura,resultado;
 
     cout<<"Qual é a base do triângulo?"<<endl;
     cin>>base;
