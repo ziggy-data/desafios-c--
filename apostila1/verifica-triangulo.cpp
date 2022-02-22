@@ -3,6 +3,8 @@ using namespace std;
 
 int main (){
 
+    //Testa a hipotese de existencia de um triangulo comparando seus lados
+
     int l1,l2,l3;
 
     cout<<"Indique o primeiro lado"<<endl;
@@ -17,6 +19,6 @@ int main (){
     }else{
         cout<<"Este triângulo NÃO existe"<<endl;
     }
-    
+
     return 0;
 }
