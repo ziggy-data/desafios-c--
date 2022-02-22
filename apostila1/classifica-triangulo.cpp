@@ -2,6 +2,9 @@
 using namespace std;
 
 int main(){
+
+    //Classifica dos triangulo  por seus lados 
+
     int l1,l2,l3;
 
     cout<<"Indique o primeiro lado"<<endl;

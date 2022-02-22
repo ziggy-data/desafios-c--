@@ -3,6 +3,8 @@ using namespace std;
 
 int main(){
 
+    //Realiza o calculo de fatorial
+
     int valor,recebe = 1;
 
     cout<<"Digite um numero"<<endl;
