@@ -2,7 +2,7 @@
 
 Neste caderno está sendo explorado perguntas realizadas na primeira apostila (IP(Exercicios00)).
 
-## 1-Descreva com suas palavras o que é um algoritmo.
+## 1-Descreva com suas palavras o que é um algoritmo
 
 Algoritmo é como uma caixa responsável para receber uma entrada de dados, em seguida trabalhar esses dados e posteriormente produzir uma saída.
 
@@ -14,7 +14,7 @@ podendo ser repetido diversas vezes ou quando for necessacitar decisões até qu
 
 Um número primo é um numero que é divisivel apenas por ele e por 1.
 
-## 3-Descreva o teorema de Pitágoras.
+## 3-Descreva o teorema de Pitágoras
 
 É uma figura geométrica onde é formada por um angulô interno de 90º (chamado de angulo reto).
 
