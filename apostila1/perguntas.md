@@ -14,3 +14,13 @@ podendo ser repetido diversas vezes ou quando for necessacitar decisões até qu
 
 Um número primo é um numero que é divisivel apenas por ele e por 1.
 
+## 3-Descreva o teorema de Pitágoras.
+
+É uma figura geométrica onde é formada por um angulô interno de 90º (chamado de angulo reto).
+
+Enunciado da teroria: A soma dos quadrados de seus catetos corresponde ao quadrado de sua hipotenusa.
+
+representação matemática: a²=b²+c²
+
+sendo: a - hipotenusa;
+       b,c - cateto.
