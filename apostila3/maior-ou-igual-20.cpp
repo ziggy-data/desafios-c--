@@ -6,7 +6,7 @@ int main(){
 
     int a;
 
-    cout<<"Testa se o valor é divisivel por 6"<<endl;
+    cout<<"Testa se o valor é maior ou igual a 20"<<endl;
     cout<<"Qual é o valor"<<endl;
     cin>>a;
     

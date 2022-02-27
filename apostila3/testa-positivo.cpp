@@ -7,7 +7,7 @@ int main(){
 
     int a;
 
-    cout<<"Testa se o valor é positivo e imprime a raiz quadrada"<<endl;
+    cout<<"Testa se o valor é positivo e imprime a raiz quadrada senão imprime o quadrado"<<endl;
     cout<<"Qual é o valor"<<endl;
     cin>>a;
     
