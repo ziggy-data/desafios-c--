@@ -9,7 +9,6 @@ int main(){
     cout<<"Testa se o valor é maior ou igual a 20"<<endl;
     cout<<"Qual é o valor"<<endl;
     cin>>a;
-    
 
     if (a > 20){
         cout<<"Maior que 20"<<endl;
