@@ -11,11 +11,14 @@ int main(){
     cin>>a;
     
 
-    if (a % 6 == 0){
-        cout<<"É divisivel por 6"<<endl;
+    if (a > 20){
+        cout<<"Maior que 20"<<endl;
+    }
+    else if (a = 20){
+        cout<<"Não esta entre 30 e 100"<<endl;
     }
     else{
-        cout<<"Não é divisivel por 6"<<endl;
+        cout<<"Menor que 20"<<endl;
     }
 
 return 0;
