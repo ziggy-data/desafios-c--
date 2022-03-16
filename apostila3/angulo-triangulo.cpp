@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int a1,a2,a3;
+    double a1,a2,a3;
 
     cout<<"Classificador de triangulos quanto aos ângulos internos"<<endl;
     cout<<"Digite um angulô 1: ";

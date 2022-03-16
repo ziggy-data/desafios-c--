@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-
 int main(){
-    string a,b;
+    double a,b;
 
     cout<<"Verifica se 2 numeros são iguais ou diferentes comparando qual é o maior valor"<<endl;
     cout<<"Digite um numero: "<<endl;

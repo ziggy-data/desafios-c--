@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-
 int main(){
     double a,b,c;
 
@@ -23,12 +22,14 @@ int main(){
             cout<<"Maior: "<<c<<" Intermediário: "<<a<<" Menor: "<<b<<endl;
         }
     }else{
-        if(b>a){
-            if(a>c){
+        if(b>c){
+            if(c>a){
                 cout<<"Maior: "<<b<<" Intermediário: "<<a<<" Menor: "<<c<<endl;
             }else{
                 cout<<"Maior: "<<b<<" Intermediário: "<<c<<" Menor: "<<a<<endl;
                 }
+        }else{
+                cout<<"Maior: "<<c<<" Intermediário: "<<b<<" Menor: "<<a<<endl;
         }
     }
 return 0;
