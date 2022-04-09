@@ -45,6 +45,14 @@ void mostra_pilha(pilha *p){
     }
 }
 
+void compara_pilha(pilha*p, pilha *x, int vetor[]){
+    for(int i=0;i<5;i++){
+        if(p->vetor[i] ==vetor[i] && x->vetor[i] == vetor[i]){
+            cout<<"Indice "<<i<< " é igual"<<endl;
+        }
+    }
+}
+
 
 int main(){
 
