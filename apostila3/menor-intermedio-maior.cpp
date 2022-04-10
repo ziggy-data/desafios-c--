@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     double a,b,c;
 
-    cout<<"Verifica se 2 numeros são iguais ou diferentes comparando qual é o maior valor"<<endl;
+    cout<<"Classifica 3 valores como maior , intermediario e menor"<<endl;
     cout<<"Digite um numero: "<<endl;
     cin>>a;
     cout<<"Digite um numero: "<<endl;
