@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    int valor, maior = 0, quantidade = 0;
+    int valor, maior = 0;
 
     cout<<"Digite valores, será armazenado o maior valor. digite -9999 para sair do código"<<endl;
 
@@ -12,7 +12,6 @@ int main(){
 
         cout<<"Digite um valor"<<endl;
         cin>>valor;
-        quantidade++;
         if(maior < valor){
             maior = valor;
         }
