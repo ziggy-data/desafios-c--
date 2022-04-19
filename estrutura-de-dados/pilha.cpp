@@ -1,10 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
+#define tam 10
 using namespace std;
 
 struct t_pilha{
     int topo;
-    int vetor[5];
+    int vetor[tam];
 } typedef pilha;
 
 int pilha_vazia(pilha *p){
@@ -15,7 +16,7 @@ int pilha_vazia(pilha *p){
 }
 
 int pilha_cheia(pilha *p){
-    if(p-> topo == 4){
+    if(p-> topo == tam -1){
         return 1;
     }
     return 0;

@@ -53,24 +53,10 @@ bool fila_esta_cheia(fila *f){
 }
 
 
-void mostra_fila(fila *f){
-    for(int i=0 ; i<tam ; i++){
-        cout<<f->vetor[i]<<endl;
-    }
-}
-
 int main(){
 
-    fila *f = (fila *)malloc(sizeof(fila));
-    f->frente = 0;
-    f->tras = 0;
-    f->qtd = 0;
-    enfileirar(f,10);
-    enfileirar(f,20);
-    enfileirar(f,30);
-    enfileirar(f,40);
-    enfileirar(f,50);
-    
-    mostra_fila(f);
 
+
+
+    return 0;
 }
