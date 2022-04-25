@@ -3,7 +3,7 @@
 using namespace std;
 
 float calcula_expressao(int a,int b, int c){
-    float resultado = (a*a) + (6+b) + c;
+    float resultado = (a*a) + (6*b) + c;
     return resultado;
 }
 
