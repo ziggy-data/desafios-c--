@@ -7,7 +7,6 @@ float retorna_quociente(int a, int b){
     return resultado;
 }
 
-
 int main(){
 
     cout<<retorna_quociente(30,4)<<endl;

@@ -73,4 +73,7 @@ int main(){
     
     mostra_fila(f);
 
+    free(f);
+
+    return 0;
 }

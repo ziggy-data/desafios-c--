@@ -7,7 +7,6 @@ float calcula_expressao(int a,int b, int c){
     return resultado;
 }
 
-
 int main(){
 
     cout<<calcula_expressao(30,1,6)<<endl;

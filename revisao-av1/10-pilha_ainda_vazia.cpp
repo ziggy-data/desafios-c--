@@ -40,7 +40,7 @@ int desempilhar(pilha *p, int *valor){
     return 1;
 }
 
-void pilha_ainda_vazia(pilha *p){
+void pilha_espacos_vazia(pilha *p){
     cout<<tam - (p->topo +1)<<endl;
 }
 
@@ -54,7 +54,9 @@ int main(){
     empilhar(p,2);
     empilhar(p,3);
 
-    pilha_ainda_vazia(p);
+    pilha_espacos_vazia(p);
+
+    free(p);
 
     return 0;
 

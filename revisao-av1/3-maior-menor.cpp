@@ -12,8 +12,6 @@ void maior_menor(int a, int b){
     }
 }
 
-
-
 int main(){
 
     maior_menor(3,2);

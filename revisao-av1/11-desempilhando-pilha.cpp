@@ -65,5 +65,7 @@ int main(){
 
     //RESPOSTA: APARECE EM ORDEM INVERSA
 
+    free(p);
+
     return 0;
 }
