@@ -41,7 +41,7 @@ void compara_numeros_positivo_negativo(float a ,float b){
 
 int main(){
 
-    int a = 10, b =20;
+    int a = 10, b =11;
 
     compara_numeros_positivo_negativo(a, b);
 
