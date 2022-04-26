@@ -3,7 +3,7 @@ using namespace std;
 
 void compara_numeros_positivo_negativo(float a ,float b){
 
-    int contador_a = 0, contador_b = 0,guarda_a=a,guarda_b=b;
+    float contador_a = 0, contador_b = 0,guarda_a=a,guarda_b=b;
 
     if(a>0){
         while(a>0){
@@ -41,7 +41,7 @@ void compara_numeros_positivo_negativo(float a ,float b){
 
 int main(){
 
-    int a = 10, b =11;
+    float a = 10, b =10.1;
 
     compara_numeros_positivo_negativo(a, b);
 
