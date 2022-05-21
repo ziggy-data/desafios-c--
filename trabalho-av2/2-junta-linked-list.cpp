@@ -22,6 +22,10 @@ void inserir(lista **cabeca,int chave){
     }
 }
 
+void junta_listas(lista *lista1, lista *lista2){
+        lista1->prox = lista2;
+}
+
 void imprimir(lista **cabeca){
     lista *temp = *cabeca;
     while(temp != NULL){
@@ -40,6 +44,7 @@ lista *busca(lista **cabeca, int chave){
     }
     return NULL;
 }
+
 
 void excluir(lista **cabeca, int chave){
     lista *temp = *cabeca;
@@ -61,37 +66,40 @@ void excluir(lista **cabeca, int chave){
     }
 }
 
+
 int main(){
 
     lista *cabeca = NULL;
+    lista *cabeca2 = NULL;
     inserir(&cabeca,10);
     inserir(&cabeca,20);
     inserir(&cabeca,30);
+    inserir(&cabeca2,30);
     imprimir(&cabeca);
 
     cout<<"------"<<endl;
 
-    cout<<busca(&cabeca,30)<<endl;
+    cout<<cabeca<<endl;
+    cout<<cabeca->chave<<endl;
+    cout<<cabeca->prox<<endl;
+
+    junta_listas(cabeca,cabeca2);
 
     cout<<"------"<<endl;
 
-    excluir(&cabeca, 20);
+    cout<<cabeca<<endl;
+    cout<<cabeca->chave<<endl;
+    cout<<cabeca->prox<<endl;
 
-    imprimir(&cabeca);
 
     free(cabeca);
-
-
-
-
-
 
     return 0;
 }
 
+/*
 
-
-
+*/
 
 
 

@@ -30,6 +30,17 @@ void imprimir(lista **cabeca){
     }
 }
 
+void conta_valores(lista **cabeca){
+    lista *temp = *cabeca; 
+    int contador = 1;
+    while(temp->prox != NULL){
+        contador++;
+        temp = temp->prox;
+    }
+    cout<<"Quantidade de valores: "<<contador<<endl;
+}
+
+
 lista *busca(lista **cabeca, int chave){
     lista *temp = *cabeca;
     while (temp != NULL){
@@ -61,6 +72,7 @@ void excluir(lista **cabeca, int chave){
     }
 }
 
+
 int main(){
 
     lista *cabeca = NULL;
@@ -71,20 +83,9 @@ int main(){
 
     cout<<"------"<<endl;
 
-    cout<<busca(&cabeca,30)<<endl;
-
-    cout<<"------"<<endl;
-
-    excluir(&cabeca, 20);
-
-    imprimir(&cabeca);
+    conta_valores(&cabeca);
 
     free(cabeca);
-
-
-
-
-
 
     return 0;
 }
