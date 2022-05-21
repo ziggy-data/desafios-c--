@@ -8,7 +8,7 @@ struct T_arvore{
     struct T_arvore *dir;
 }typedef arvore;
 
-arvore * inserir(arvore *raiz, int chave){
+arvore *inserir(arvore *raiz, int chave){
     if(raiz == NULL){
         arvore *no = (arvore *)malloc(sizeof(arvore));
         no->chave = chave;
@@ -17,9 +17,9 @@ arvore * inserir(arvore *raiz, int chave){
         return no;
     }else{
         if(chave > raiz->chave){
-            raiz->dir = inserir(raiz, chave);
+            raiz->dir = inserir(raiz->dir, chave);
         }else{
-            raiz->esq = inserir(raiz, chave);
+            raiz->esq = inserir(raiz->esq, chave);
         }
         return raiz;
     }
@@ -27,6 +27,7 @@ arvore * inserir(arvore *raiz, int chave){
 
 void em_ordem(arvore *raiz){
     if(raiz == NULL)return;
+    em_ordem(raiz->esq);
     cout<<raiz->chave<<"\t";
     em_ordem(raiz->dir);
 }
@@ -45,18 +46,23 @@ void pos_ordem(arvore *raiz){
     cout<<raiz->chave<<"\t";
 }
 
+
 int main(){
-    arvore *raiz;
-    raiz=NULL;
+    arvore *raiz = NULL;
     raiz = inserir(raiz,12);
     raiz = inserir(raiz,4);
     raiz = inserir(raiz,16);
     raiz = inserir(raiz,2);
     raiz = inserir(raiz,8);
     raiz = inserir(raiz,6);
-    //em_ordem(raiz);
-    //pre_ordem(raiz);
-    //pos_ordem(raiz);
+    em_ordem(raiz);
+    cout<<endl;
+    pre_ordem(raiz);
+    cout<<endl;
+    pos_ordem(raiz);
+
+
+    free(raiz);
 
     return 0;
 }
