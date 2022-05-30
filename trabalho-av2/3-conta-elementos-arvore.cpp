@@ -25,41 +25,25 @@ arvore *inserir(arvore *raiz, int chave){
     }
 }
 
-int contar_elementos(arvore *raiz){
-    if(raiz == NULL){
-        return 0;
-    }else{
-        return 1 + contar_elementos(raiz->esq) + contar_elementos(raiz->dir);
+void contar_elementos(arvore *raiz,int &contador){
+    if(raiz != NULL){
+        contador++;
+        contar_elementos(raiz->dir,contador);
+        contar_elementos(raiz->esq,contador);
     }
 }
 
-int contar_elementos2(arvore *raiz){
-    if(raiz == NULL){
-        return 0;
-    }else{
-        int contador_esq = contador_esq + contar_elementos2(raiz->esq);
-        int contador_dir = contador_dir + contar_elementos2(raiz->dir);
-        cout<<contador_dir<<endl;
-        cout<<contador_esq<<endl;
-        return 1;
-    }
-}
-
-int altura(arvore *raiz){
-    if(raiz == NULL){
-        return 0;
-    }
-    else{
-        int esq = altura(raiz->esq);
-        int dir = altura(raiz->dir);
-        if(esq > dir){
-            return esq + 1;
-        }else{
-            return dir + 1;
+void verifica_altura(arvore *raiz, int &contador_dir, int &contador_esq){
+    if(raiz != NULL){
+        if(raiz->dir != NULL){
+            contador_dir++;
+            verifica_altura(raiz->dir,contador_dir,contador_esq);
+        }if(raiz->esq != NULL){
+            contador_esq++;
+            verifica_altura(raiz->esq,contador_dir,contador_esq);
         }
     }
 }
-
 
 /*
 void conta_pilha(arvore *raiz, int contador){
@@ -99,6 +83,7 @@ void pos_ordem(arvore *raiz){
 
 int main(){
     arvore *raiz = NULL;
+    int contador = 0, contador_dir = 0, contador_esq = 0;
     raiz = inserir(raiz,12);
     raiz = inserir(raiz,4);
     raiz = inserir(raiz,16);
@@ -112,8 +97,12 @@ int main(){
     pos_ordem(raiz);
     cout<<endl;
 
-    cout<<"Quantidade de nos: "<<contar_elementos(raiz)<<endl;
-    cout<<"Quantidade de altura: "<<altura(raiz)<<endl;
+    contar_elementos(raiz, contador);
+    cout<<"Quantidade de elementos: "<<contador<<endl;
+    verifica_altura(raiz, contador_dir,contador_esq);
+    cout<<"Altura direita: "<< contador_dir<<" , Altura Esquerda: "<< contador_esq<<endl;
+
+    cout<<"--------"<<endl;
 
     arvore *raiz2 = NULL;
     raiz2 = inserir(raiz2,30);
@@ -129,13 +118,12 @@ int main(){
     raiz2 = inserir(raiz2,90);
     raiz2 = inserir(raiz2,100);
 
-    cout<<"Quantidade de nos 2: "<<contar_elementos(raiz2)<<endl;
-    cout<<"Quantidade de altura  2: "<<altura(raiz2)<<endl;
-    int contador = 0;
-    //conta_pilha(raiz,contador);
-    cout<<&contador<<endl;
-    
-    cout<<contar_elementos2(raiz)<<endl;
+    contador = 0, contador_dir = 0, contador_esq = 0;
+    contar_elementos(raiz2, contador);
+    cout<<"Quantidade de elementos 2: "<<contador<<endl;
+
+    verifica_altura(raiz2, contador_dir,contador_esq);
+    cout<<"Altura direita: "<< contador_dir<<" , Altura Esquerda "<< contador_esq<<endl;
 
     free(raiz);
     free(raiz2);
