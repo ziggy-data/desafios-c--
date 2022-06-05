@@ -120,10 +120,8 @@ int main(){
     cout<<endl;
     pos_ordem(raiz);
     cout<<endl;
-
     
-    cout<<"Quantidade de elementos: "<<contar_elementos(raiz)<<endl;
-    
+    cout<<"Quantidade de elementos: "<<contar_elementos(raiz)<<endl;    
     cout<<"Altura: "<<altura(raiz)<<endl;
 
     cout<<"--------"<<endl;
@@ -142,11 +140,7 @@ int main(){
     raiz2 = inserir(raiz2,90);
     raiz2 = inserir(raiz2,100);
 
-
-    
-    cout<<"Quantidade de elementos 2: "<<contar_elementos(raiz2)<<endl;
-
-    
+    cout<<"Quantidade de elementos 2: "<<contar_elementos(raiz2)<<endl;    
     cout<<"Altura: "<<altura(raiz2)<<endl;
 
     free(raiz);
