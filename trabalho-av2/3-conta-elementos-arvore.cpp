@@ -108,7 +108,6 @@ void pos_ordem(arvore *raiz){
 
 int main(){
     arvore *raiz = NULL;
-    int contador = 0, contador_dir = 0, contador_esq = 0;
     raiz = inserir(raiz,12);
     raiz = inserir(raiz,4);
     raiz = inserir(raiz,16);
@@ -122,10 +121,10 @@ int main(){
     pos_ordem(raiz);
     cout<<endl;
 
-    contar_elementos(raiz, contador);
-    cout<<"Quantidade de elementos: "<<contador<<endl;
-    verifica_altura(raiz, contador_dir,contador_esq);
-    cout<<"Altura direita: "<< contador_dir<<" , Altura Esquerda: "<< contador_esq<<endl;
+    
+    cout<<"Quantidade de elementos: "<<contar_elementos(raiz)<<endl;
+    
+    cout<<"Altura: "<<altura(raiz)<<endl;
 
     cout<<"--------"<<endl;
 
@@ -143,12 +142,12 @@ int main(){
     raiz2 = inserir(raiz2,90);
     raiz2 = inserir(raiz2,100);
 
-    contador = 0, contador_dir = 0, contador_esq = 0;
-    contar_elementos(raiz2, contador);
-    cout<<"Quantidade de elementos 2: "<<contador<<endl;
 
-    verifica_altura(raiz2, contador_dir,contador_esq);
-    cout<<"Altura direita: "<< contador_dir<<" , Altura Esquerda "<< contador_esq<<endl;
+    
+    cout<<"Quantidade de elementos 2: "<<contar_elementos(raiz2)<<endl;
+
+    
+    cout<<"Altura: "<<altura(raiz2)<<endl;
 
     free(raiz);
     free(raiz2);
