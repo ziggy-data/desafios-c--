@@ -1,31 +1,38 @@
+#include <iostream>
 #include <math.h>
 #include <stdio.h>
+using namespace std;
+#define TAMANHO 6
 
-void insertionSort(int arr[], int size){
-    int i, j, key;
-    for (i = 1; i < size; i++) {
-        key = arr[i];
-        j = i - 1;
-        while (j >= 0 && arr[j] > key) {
-            arr[j + 1] = arr[j];
-            j = j - 1;
+void insertion (int *v)
+{
+    int i, j, aux;
+    for (i=0; i< TAMANHO-1; i++)
+    {
+        j=i+1;
+        while (v[j-1]>v[j] && j > 0)
+        {
+            aux = v[j-1];
+            v[j-1]=v[j];
+            v[j]=aux;
+            j--;
         }
-        arr[j + 1] = key;
     }
 }
 
-void printArray(int arr[], int size){
-    int i;
-    for (i = 0; i < size; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
+
+void printArray(int vetor[]){
+    for (int i = 0; i < TAMANHO; i++)
+        cout<<"Item "<<i<<" : "<<vetor[i]<<endl;
 }
 
 int main(){
-    int arr[] = { 50, 40, 30, 20, 10 };
-    int size = sizeof(arr) / sizeof(arr[0]);
-    insertionSort(arr, size);
-    printArray(arr, size);
+    int vetor[TAMANHO] = { 4,7,2,5,4,0 };
+
+    insertion(vetor);
+
+    printArray(vetor);
+
 /*
     Funcionamento: Percorre um vetor de elementos da esquerda
     para a direita e à medida que avança vai ordenando os elementos
