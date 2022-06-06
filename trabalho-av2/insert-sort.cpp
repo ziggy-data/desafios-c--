@@ -6,8 +6,8 @@ using namespace std;
 
 void insertion (int *v)
 {
-    int i, j, aux;
-    for (i=0; i< TAMANHO-1; i++)
+    int j, aux;
+    for (int i=0; i< TAMANHO-1; i++)
     {
         j=i+1;
         while (v[j-1]>v[j] && j > 0)
@@ -46,6 +46,10 @@ int main(){
     Passo a passo: É procurada a posição em que o valor deverá ficar(corresponde
     a procurar a primeira posição da array que tem um valor maior do que o que
     queremos ordenar no array)
+
+
+    a partir de uma lista pequena inserir numeros de uma forma ordenada, de forma
+     que essa lista vai crescendo e será inserida numeros de forma ordenada.
 */
     return 0;
 }
