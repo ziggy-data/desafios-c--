@@ -1,0 +1,249 @@
+Disc.: TÓPICOS DE CLOUD, IOT E INDÚSTRIA 4.0 EM PYTHON 
+Acertos: 10,0 de 10,0 26/05/2022 
+ 
+ 
+ 
+1a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Marque a opção que não representa uma plataforma de IoT: 
+ 
+ 
+Salesforce IoT Cloud 
+ 
+IBM Watson IoT platform 
+ 
+Cisca IoT Cloud connect 
+ Arduino NANO 33 IoT 
+ 
+Arduino Cloud IoT 
+Respondido em 26/05/2022 00:20:36 
+ 
+Explicação: 
+Resposta correta: Arduino NANO 33 IoT 
+ 
+ 
+2a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Sobre a plataforma de IoT AWS, considere as afirmações a seguir. 
+ 
+I. O ponto de entrada é o módulo de nome message broker, responsável por manejar a comunicação entre os 
+dispositivos inscritos nele e a nuvem AWS IoT. 
+II. Servem como exemplos desde eletrodomésticos e meios de transporte até roupas e maçanetas conectadas à 
+internet e a outros dispositivos, como smartphones e computadores. 
+III. A plataforma é rica em painéis para a visualização de dados (dashboards) e usa o Power BI. 
+IV. O device shadow garante que os dados de aplicações destinados ao dispositivo sejam entregues mesmo se ele 
+estiver offline. 
+V. A segurança fica a cargo do módulo security and identity, que usa protocolos baseados no certificado x.509. 
+ 
+A sequência correta é: 
+ 
+ 
+V, V, F, F, V. 
+ 
+V, V, V, F, V. 
+ 
+V, V, V, V, V. 
+ V, V, F, V, V. 
+ 
+V, V, F, F, F. 
+Respondido em 26/05/2022 00:22:49 
+ 
+Explicação: 
+Resposta correta: V, V, F, V, V. 
+ 
+ 
+3a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Um dos protocolos mais utilizados para desenvolver projetos de IoT é o MQTT. Cada protocolo tem uma orientação 
+que é a base para o seu desenvolvimento. A respeito do protocolo MQQT, selecione a opção CORRETA. 
+ 
+ 
+É orientado para dados, pois gerencia o fluxo entre o servidor e os dispositivos da rede. 
+ 
+É orientado para dispositivo, dado que trata a heterogeneidade dos diversos componentes que podem se 
+integrar no sistema. 
+ 
+É orientado para Rede, uma vez que considera aspectos específicos da internet. 
+ 
+É orientado para comunicação segura, uma vez que utiliza de protocolos que reduzem os riscos de 
+comunicação na rede. 
+ É orientado para Mensagem, pois trata cada mensagem como um bloco de dados que vai ser operada pelo 
+broker. 
+Respondido em 26/05/2022 00:23:11 
+ 
+Explicação: 
+Respsota correta: É orientado para Mensagem, pois trata cada mensagem como um bloco de dados que vai ser operada 
+pelo broker. 
+ 
+ 
+4a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Os protocolos viabilizam a comunicação dos dispositivos na rede através da disponibilização e especificação de 
+funcionalidades. A respeito do protocolo CoAP, selecione a opção CORRETA sobre a camada que ele atua. 
+ 
+ 
+Camada de transporte, uma vez que trata da forma como os dados serão transmitidos. 
+ 
+Camada de controle, pois gerencia o modo como dispositivos e aplicações WEB se comunicam. 
+ 
+Camada de rede, pois trata da heterogeneidade das tecnologias envolvidas na rede. 
+ Camada de serviço, pois provê recursos para que dispositivos e aplicações WEB se comuniquem. 
+ 
+Camada de aplicação, pois viabiliza o desenvolvimento de aplicações WEB que vão interagir com os 
+dispositivos. 
+Respondido em 26/05/2022 00:23:35 
+ 
+Explicação: 
+Resposta correta: Camada de serviço, pois provê recursos para que dispositivos e aplicações WEB se comuniquem. 
+ 
+ 
+5a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Os Shields do Arduino fazem parte do seu ecossistema. Selecione a opção correta com um modo equivalente de 
+defini-los. 
+ 
+ 
+IDE Arduino 
+ 
+Módulos de conectividade 
+ Módulos adicionais 
+ 
+Outros Arduinos 
+ 
+Periféricos extras 
+Respondido em 26/05/2022 00:26:36 
+ 
+Explicação: 
+Resposta correta: Módulos adicionais 
+ 
+ 
+6a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+UFSBA - 2016 ‒ Universidade Federal do Sul da Bahia‒ CEV - Coordenação de Concursos e Exames Vestibulares ‒
+Engenheiro eletricista ‒ Adaptado 
+Arduino é uma plataforma de eletrônica aberta para a criação de protótipos baseada em software e hardware livres, 
+flexíveis e fáceis de usar. 
+ 
+O Arduino pode adquirir informação do ambiente por meio de seus pinos de entrada, para isso uma completa gama 
+de sensores pode ser usada. Por outro lado, o Arduino pode atuar no ambiente controlando luzes, motores ou outros 
+atuadores. Os campos de atuação para o controle de sistemas são imensos, podendo ter aplicações na área de 
+impressão 3D, robótica, engenharia de transportes, engenharia agronômica, musical, moda e tantas outras. O 
+microcontrolador da placa Arduino é programado mediante a linguagem de programação Arduino, baseada em 
+Wiring, e o ambiente de desenvolvimento (IDE) está baseado em Processing, uma linguagem de programação de 
+código aberto. Em relação à programação do Arduino, a coluna da esquerda apresenta as três partes principais em 
+que um programa pode ser dividido e a da direita, exemplo de cada uma das partes. Numere a coluna da direita de 
+acordo com a da esquerda. 
+1- Estrutura ( ) pinMode 
+2- Variáveis ( ) while 
+3- Funções ( ) HIGH | LOW 
+Assinale a sequência correta. 
+ 
+ 
+3, 2, 1 
+ 
+2, 1, 3 
+ 
+1, 2, 3 
+ 
+2, 3, 1 
+ 3, 1, 2 
+Respondido em 26/05/2022 00:24:06 
+ 
+Explicação: 
+Resposta correta: 3, 1, 2 
+ 
+ 
+7a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Qual sistema em cibersegurança é responsável por monitorar e registrar o comportamento em uma rede? 
+ 
+ 
+Sistema gerador de senhas 
+ 
+Sistema de criptografia 
+ 
+Sistema de firewall 
+ Sistema de detecção de intrusão 
+ 
+Sistema de desativação de serviços não seguros 
+Respondido em 26/05/2022 00:24:24 
+ 
+Explicação: 
+Resposta correta: Sistema de detecção de intrusão 
+ 
+ 
+8a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Qual área da inteligência artificial é mais usada na indústria? 
+ 
+ 
+Algoritmos genéticos 
+ Reconhecimento de padrões 
+ 
+Tradução automática 
+ 
+Lógica difusa 
+ 
+Programação embarcada 
+Respondido em 26/05/2022 00:19:15 
+ 
+Explicação: 
+Resposta correta: Reconhecimento de padrões 
+ 
+ 
+9a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Em relação ao conceito de computação em nuvem, marque a alternativa correta. 
+ 
+ 
+As empresas gastam muito tempo estimando o hardware que deve ser comprado. 
+ 
+O processo de compras do acesso demora meses. 
+ Computação em nuvem ajuda a transformar Capex em Opex. 
+ 
+Computação em nuvem ajuda a transformar Opex em Capex. 
+ 
+Implementação de computação em nuvem requer um alto investimento inicial. 
+Respondido em 26/05/2022 00:19:32 
+ 
+Explicação: 
+A resposta certa é: Computação em nuvem ajuda a transformar Capex em Opex. 
+ 
+ 
+10a 
+ Questão 
+Acerto: 1,0 / 1,0 
+ 
+Marque a opção que não apresenta uma característica da quarta revolução industrial: 
+ 
+ 
+Uso intenso de Big Data e Analytics. 
+ 
+Dependência da tecnologia 5G para viabilizar produtos ou serviços. 
+ Transformação Digital. 
+ 
+Adoção do paradigma de fábricas inteligentes. 
+ 
+Mudança no perfil dos trabalhadores, de menos capacitados para profissionais mais qualificados. 
+Respondido em 26/05/2022 00:24:43 
+ 
+Explicação: 
+A resposta certa é: Transformação Digital.
